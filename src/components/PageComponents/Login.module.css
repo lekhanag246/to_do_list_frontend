@@ -1,0 +1,69 @@
+.login_container {
+    margin: 1em auto;
+    width: 360px;
+    height: fit-content;
+    background-color: var(--mab-white);
+    border: 2px solid var(--mab-black);
+}
+
+.login_head {
+    text-align: center;
+    padding: 1.8em 0 3em;
+}
+
+.login_title {
+    padding: 0 0 0.3em;
+    font-size: 1.8em;
+}
+
+.login_message {
+    font-size: 1.1em;
+    padding: 0 1em;
+    font-weight: 500;
+    color: gray;
+}
+
+.login_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_inp,
+.login_btn {
+    width: 90%;
+    font-size: 1.15em;
+    padding: 0.5em;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid var(--mab-black);
+    margin-bottom: 1em;
+}
+
+.login_btn {
+    background-color: #FE8D03;
+    color: #0d0d0d;
+}
+
+.forgot_pwd {
+    margin-bottom: 1em;
+}
+
+.login_foot {
+    padding: 1.8em 0 28.8px;
+    text-align: center;
+}
+
+.termsCondition {
+    padding: 2em 5%;
+    /* text-align: justify; */
+    font-size: 0.9em;
+    font-weight: 700;
+    color: gray;
+}
+
+.termsCondition>a {
+    font-weight: 700;
+}

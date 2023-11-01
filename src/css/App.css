@@ -1,0 +1,253 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --mab-orange: #FE8D03;
+    --mab-gold: #feaf01;
+    --mab-white: #f4f5f3;
+    --mab-brown: #382a27;
+    --mab-black: #0d0d0d;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+    border: 1px solid black;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
+}
+
+main {
+    min-height: 92vh;
+    background-color: #BE6DB7;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+}
+
+.list-box {
+    margin: 1em 0;
+    border: 2px solid var(--mab-brown);
+    border-radius: 25px;
+    width: 360px;
+    /* width: 98%; */
+    min-height: 80vh;
+    background-color: var(--mab-white);
+}
+
+.list-title {
+    padding: 1.5em 0;
+}
+
+.list-title>h2 {
+    text-align: center;
+    color: var(--mab-black);
+}
+
+/* footer{
+    height: 8vh;
+    background-color: var(--mab-brown);
+    color: var(--mab-white);
+} */
+/* .footerContent>span{
+    letter-spacing: 0.1em;
+} */
+
+
+.date {
+    margin-top: 0.5em;
+    color: rgb(56, 42, 39, 0.5);
+    font-weight: bold;
+    text-align: center;
+}
+
+.add-task-form {
+    width: 100%;
+    padding: 0 2.5% 1.1em;
+    display: flex;
+
+}
+
+.input-div {
+    width: 90%;
+    /* position: relative; */
+    display: flex;
+}
+
+.add-task-inp {
+    width: 95%;
+    font-size: 1.15em;
+    padding: 0.5em;
+    outline: none;
+    border-radius: 15px 0 0 15px;
+    border-top: 2px solid var(--mab-black);
+    border-bottom: 2px solid var(--mab-black);
+    border-left: 2px solid var(--mab-black);
+    border-right: 0;
+}
+
+.cancel-inp {
+    color: grey;
+    font-size: 1.15em;
+    padding: 0.5em;
+    background-color: white;
+    border-top: 2px solid var(--mab-black);
+    border-bottom: 2px solid var(--mab-black);
+
+}
+
+.add-task-btn {
+    width: 40px;
+    font-size: 1.15em;
+    padding: 0.5em 0.5em;
+    border-radius: 0 15px 15px 0;
+    border-top: 2px solid var(--mab-black);
+    border-bottom: 2px solid var(--mab-black);
+    border-right: 2px solid var(--mab-black);
+    border-left: 0;
+}
+
+.list-items {
+    padding: 0 2.5% 1.1em;
+    font-size: 1.15em;
+    list-style: none;
+}
+
+li {
+    font-size: 1em;
+    padding: 0.25em 0.25em;
+}
+
+.list-completed {
+    border-top: 1px solid grey;
+    padding: 0 2.5% 1.1em;
+
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    /* border: ; */
+}
+
+.cb {
+    margin-right: 5%;
+}
+
+.list-item-content {
+    width: 90%;
+    padding-right: 0.8em;
+}
+
+.list-item-setting {
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+
+    /* flex-direction: column; */
+}
+
+.edit-btn {
+    padding: 0.25em 0;
+    color: grey;
+    background-color: transparent;
+    border: none;
+    font-size: 0.85em;
+}
+
+.edit-btn-hover:hover {
+    color: #382a27;
+}
+
+.list-item-p {
+    padding: 0.5em 0;
+    word-break: break-all;
+}
+
+[contenteditable=true] {
+    outline: 0px solid transparent;
+    padding-bottom: 0.2em;
+    margin-bottom: 3.52px;
+    border-bottom: 2px solid rgb(128, 128, 128, 0.5);
+}
+
+.completed-item {
+    text-decoration: line-through gray;
+    color: gray;
+
+}
+
+.login-container {
+    width: 360px;
+    min-height: 450px;
+    background-color: var(--mab-white);
+    border: 2px solid var(--mab-black);
+}
+
+.login-head {
+    text-align: center;
+    padding: 1.8em 0 3em;
+}
+
+.login-title {
+    padding: 0 0 0.3em;
+    font-size: 1.8em;
+}
+
+.login-message {
+    font-size: 1.1em;
+    padding: 0 1em;
+    font-weight: 500;
+    color: gray;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-inp,
+.login-btn {
+    width: 90%;
+    font-size: 1.15em;
+    padding: 0.5em;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid var(--mab-black);
+    margin-bottom: 1em;
+}
+
+.login-btn {
+    background-color: #FE8D03;
+    color: #0d0d0d;
+}
+
+.forgot-pwd {
+    margin-bottom: 1em;
+}
+
+.login-foot {
+    padding: 1.8em 0 28.8px;
+    text-align: center;
+}
+
+.termsCondition {
+    padding: 2em 5%;
+    /* text-align: justify; */
+    font-size: 0.9em;
+    font-weight: 700;
+    color: gray;
+}

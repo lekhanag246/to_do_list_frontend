@@ -1,0 +1,18 @@
+.alert {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    min-height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.alertContent {
+    height: 20%;
+    margin: 5px auto;
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+}
