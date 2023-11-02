@@ -16,7 +16,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      let { data } = await axiosInstance.post('users/sign-in', { email, password })
+      let { data } = await axiosInstance.post('/users/sign-in', { email, password })
       setToken(data.accessToken)
 
       setAlert({ status: data.status, message: data.message })

@@ -14,7 +14,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      let { data } = await axiosInstance.post('users/sign-up', { email, password, username })
+      let { data } = await axiosInstance.post('/users/sign-up', { email, password, username })
       setAlert({ status: data.status, message: data.message })
       navigate('/sign-in', { replace: true })
     } catch (error) {
