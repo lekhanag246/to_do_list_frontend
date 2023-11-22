@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <h1 className='logo'>todo_list</h1>
+      <h1 className='logo'>task_master</h1>
       <nav>
         <NavLink className={token ? "navlink " : "navlink inactiveTasks"} to='/'>My Tasks</NavLink>
         {token == "" ?
